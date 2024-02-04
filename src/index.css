@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* APPLY TO ALL */
+.body{
+    @apply font-poppins m-0 p-0 box-border scroll-smooth transition-all duration-500
+}
+
+
+
+
+/* ACTIVE LINK STYLE */
+.active { 
+    @apply  border rounded-lg border-white md:border-green-700 p-2 duration-150 ease-in
+}
+
+
+
+
+/* NAVIGATION BAR  */
+.header{
+    @apply flex justify-between items-center fixed top-0 left-0 w-full px-10 py-8 sm:px-20 z-[10000] duration-500
+}
+
+.header .link, .sideNavBar .link{
+    @apply font-semibold text-xl md:font-medium md:text-base text-white hover:border hover:rounded-lg hover:border-green-700 hover:p-2 duration-500 ease-in
+}
+
+.header.sticky{
+    @apply bg-white py-10 sm:px-24 shadow-4xl
+}
+
+.header.sticky .link{
+    @apply text-black
+}
+
+.header .menuToggle{
+    @apply w-6 h-6 text-white mr-4 md:hidden block cursor-pointer
+}
+
+
+.header.sticky .menuToggle{
+    @apply text-black
+}
+
+
+.header .navigation{
+    @apply relative md:mr-6 hidden md:flex
+}
+
+.sideNavBar{
+    @apply w-full h-[calc(100%-100px)] fixed  left-0 justify-center items-center flex-col bg-green-700 rounded-none md:hidden z-[10000] duration-500 flex
+}
+
+.sideNavBar .link{
+    @apply hover:border-white ml-[-20%] 
+}
+
+.themeIcon{
+    @apply md:w-6 md:h-6 w-5 h-5 rotate-180 text-green-700 cursor-pointer md:hover:w-7 md:hover:h-7 hover:w-6 hover:h-6 duration-500 ease-in
+}
+
+
+/* HOME */
+
+.banner{
+    @apply relative w-full min-h-screen flex justify-center items-center bg-cover lg:px-0 px-6 min-[400px]:px-10
+}
+
+.banner .content{
+    @apply p-5 max-w-4xl text-center rounded-2xl shadow-3xl border-t border-l border-solid border-white/[.5] bg-mirror-gray/[.062] backdrop-blur-xs 
+}
+
+.banner .content .name{
+    @apply text-base font-semibold min-[500px]:font-normal min-[400px]:text-xl min-[500px]:text-3xl  sm:text-4xl md:text-5xl text-white
+}
+
+
+.banner .content .profession{
+    @apply font-semibold min-[500px]:font-normal text-sm min-[400px]:text-lg min-[500px]:text-2xl sm:text-3xl md:text-4xl text-green-700 mt-7
+}
+
+.banner .content .description{
+    @apply text-white text-xs  min-[400px]:text-base min-[500px]:text-lg sm:text-xl md:text-2xl mt-5 tracking-widest
+}
+
+.banner .content .btn{
+    @apply hover:tracking-wider sm:hover:tracking-widest md:hover:tracking-btn duration-500 border-none rounded-lg text-xs sm:text-sm md:text-base text-white bg-green-700 inline-block py-2.5 px-7 my-5 mx-2.5 uppercase no-underline md:tracking-widest sm:tracking-wider tracking-wide ease-in
+}
