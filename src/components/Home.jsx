@@ -23,7 +23,7 @@ const Home = () => {
 
       return (
         <div
-          className="banner "
+          className="banner"
           style={{ backgroundImage: `url(${bannerBackground})` }}
           id="home"
         >
