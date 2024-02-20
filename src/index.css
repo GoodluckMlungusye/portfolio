@@ -6,193 +6,192 @@
 
 
 /* APPLY TO ALL */
-.body{
+.body {
     @apply font-poppins m-0 p-0 box-border scroll-smooth transition-all duration-500
 }
 
-.btn{
+.btn {
     @apply hover:tracking-wider sm:hover:tracking-widest md:hover:tracking-btn duration-500 border-none rounded-lg text-xs sm:text-sm md:text-base text-white bg-green-700 inline-block py-2.5 px-7 my-5 mx-2.5 uppercase no-underline md:tracking-widest sm:tracking-wider tracking-wide ease-in
 }
 
-.icon{
-    @apply md:w-6 md:h-6 w-5 h-5  text-green-700
+.icon {
+    @apply md:w-6 md:h-6 w-5 h-5 text-green-700
 }
 
-.title{
+.title {
     @apply text-center p-7
 }
 
-.title h3{
+.title h3 {
     @apply text-black sm:text-3xl text-xl
 }
 
-.title h3 span{
+.title h3 span {
     @apply text-green-700
 }
 
-.sub-title{
+.sub-title {
     @apply flex justify-center items-center mb-5
 }
 
-.sub-title p{
-    @apply font-normal sm:text-xl text-black  text-lg pl-2
+.sub-title p {
+    @apply font-normal sm:text-xl text-black text-lg pl-2
 }
 
 
 /* NAVIGATION BAR  */
-.header{
+.header {
     @apply flex justify-between items-center fixed top-0 left-0 w-full px-10 py-8 sm:px-20 z-[10000] duration-500
 }
 
-.header .link, .side-nav-bar .link{
+.header .link, .side-nav-bar .link {
     @apply font-semibold text-xl md:font-medium md:text-base text-white hover:border hover:rounded-lg hover:border-green-700 hover:p-2 duration-500 ease-in
 }
 
-.active { 
-    @apply  border rounded-lg border-white md:border-green-700 p-2 duration-150 ease-in
+.active {
+    @apply border rounded-lg border-white md:border-green-700 p-2 duration-150 ease-in
 }
 
-.header.sticky{
-    @apply bg-white py-10 sm:px-24  shadow-4xl
+.header.sticky {
+    @apply bg-white py-10 sm:px-24 shadow-4xl
 }
 
-.header.sticky .link{
+.header.sticky .link {
     @apply text-black
 }
 
-.header .menu-toggle{
+.header .menu-toggle {
     @apply w-6 h-6 text-white mr-4 md:hidden block cursor-pointer
 }
 
-.header.sticky .menu-toggle{
+.header.sticky .menu-toggle {
     @apply text-black
 }
 
-.header .navigation{
+.header .navigation {
     @apply relative md:mr-6 hidden md:flex
 }
 
-.side-nav-bar{
-    @apply w-full h-[calc(100%-100px)] fixed  left-0 justify-center items-center flex-col bg-green-700 rounded-none md:hidden z-[10000] duration-500 flex
+.side-nav-bar {
+    @apply w-full h-[calc(100%-100px)] fixed left-0 justify-center items-center flex-col bg-green-700 rounded-none md:hidden z-[10000] duration-500 flex
 }
 
-.side-nav-bar .link{
-    @apply hover:border-white ml-[-20%] 
+.side-nav-bar .link {
+    @apply hover:border-white ml-[-20%]
 }
 
-.theme-icon{
+.theme-icon {
     @apply md:w-6 md:h-6 w-5 h-5 rotate-180 text-green-700 cursor-pointer md:hover:w-7 md:hover:h-7 hover:w-6 hover:h-6 duration-500 ease-in
 }
 
 
 /* HOME */
-.banner{
+.banner {
     @apply relative w-full min-h-screen flex justify-center items-center bg-cover lg:px-0 px-6 min-[400px]:px-10
 }
 
-.banner .content{
-    @apply p-5 max-w-4xl text-center rounded-2xl shadow-3xl border-t border-l border-solid border-white/[.5] bg-mirror-gray/[.062] backdrop-blur-xs 
+.banner .content {
+    @apply p-5 max-w-4xl text-center rounded-2xl shadow-3xl border-t border-l border-solid border-white/[.5] bg-mirror-gray/[.062] backdrop-blur-xs
 }
 
-.banner .content .name{
-    @apply text-base font-semibold min-[500px]:font-normal min-[400px]:text-xl min-[500px]:text-3xl  sm:text-4xl md:text-5xl text-white
+.banner .content .name {
+    @apply text-base font-semibold min-[500px]:font-normal min-[400px]:text-xl min-[500px]:text-3xl sm:text-4xl md:text-5xl text-white
 }
 
 
-.banner .content .profession{
+.banner .content .profession {
     @apply font-semibold min-[500px]:font-normal text-sm min-[400px]:text-lg min-[500px]:text-2xl sm:text-3xl md:text-4xl text-green-700 mt-7
 }
 
-.banner .content .description{
-    @apply text-white text-xs  min-[400px]:text-base min-[500px]:text-lg sm:text-xl md:text-2xl mt-5 tracking-widest
+.banner .content .description {
+    @apply text-white text-xs min-[400px]:text-base min-[500px]:text-lg sm:text-xl md:text-2xl mt-5 tracking-widest
 }
 
 
 /* ABOUT */
-.box-container{
+.box-container {
     @apply flex justify-center items-center
 }
 
 
-.inbox-container{
-    @apply  flex-wrap justify-center ml-8 flex-col min-[992px]:flex-row flex 
+.inbox-container {
+    @apply flex-wrap justify-center ml-8 flex-col min-[992px]:flex-row flex
 }
 
 
 .box-container .inbox-container .box {
-    @apply rounded-xl m-6 min-[992px]:w-[30%] h-[25%] md:h-[30%] text-center p-1 bg-[#DFD8D81F] shadow-2xl w-[90%]  min-[992px]:ml-0 min-[561px]:ml-[3%] ml-0
+    @apply rounded-xl m-6 min-[992px]:w-[30%] h-[25%] md:h-[30%] text-center p-1 bg-[#DFD8D81F] shadow-2xl w-[90%] min-[992px]:ml-0 min-[561px]:ml-[3%] ml-0
 }
 
-.box-container .inbox-container .box .image{
+.box-container .inbox-container .box .image {
     @apply sm:h-72 w-[100%] rounded-lg overflow-hidden h-64
 }
 
-.box-container .inbox-container .box .image img{
+.box-container .inbox-container .box .image img {
     @apply h-[100%] w-[100%] object-cover transition duration-200 ease-linear
 }
 
-.box-container .inbox-container .box:hover .image img{
+.box-container .inbox-container .box:hover .image img {
     @apply scale-125
 }
 
-.box-container .inbox-container .box .content .duration{
+.box-container .inbox-container .box .content .duration {
     @apply relative top-[-16px] sm:p-1 inline-block bg-[#B1A7A7D8] sm:rounded-md p-0.5 rounded
 }
 
-.box-container .inbox-container .box .content .duration span{
+.box-container .inbox-container .box .content .duration span {
     @apply sm:text-xl my-0 mx-4 text-black text-lg
 }
 
-.box-container .inbox-container .box .content .duration a:hover{
- @apply text-green-700
+.box-container .inbox-container .box .content .duration a:hover {
+    @apply text-green-700
 }
 
-.box-container .inbox-container .box .content h3{
+.box-container .inbox-container .box .content h3 {
     @apply text-black text-sm sm:text-base
 }
 
-.box-container .inbox-container .box .content p{
+.box-container .inbox-container .box .content p {
     @apply text-black p-4 text-left text-sm sm:text-base duration-500 ease-in
-         
 }
 
-.explore{
+.explore {
     @apply flex justify-center items-center bg-[#d4cbcb59] w-full min-[555px]:h-52 md:h-64 min-[555px]:flex-row flex-col h-full min-[555px]:px-0 px-10 py-6
 }
 
-.explore .e-box{
-    @apply  w-full min-[555px]:w-36 h-24 md:w-72 md:h-36 bg-white m-3 rounded md:rounded-lg md:p-8 p-4 shadow-2xl 
+.explore .e-box {
+    @apply w-full min-[555px]:w-36 h-24 md:w-72 md:h-36 bg-white m-3 rounded md:rounded-lg md:p-8 p-4 shadow-2xl
 }
 
-.explore .e-box .e-content{
+.explore .e-box .e-content {
     @apply text-center
 }
 
-.explore .e-box .e-content h1{
+.explore .e-box .e-content h1 {
     @apply md:text-4xl font-semibold text-green-700 text-2xl
 }
 
-.explore .e-box .e-content p{
+.explore .e-box .e-content p {
     @apply md:text-base text-xs
 }
 
 
 /* SKILLS */
-.skill-container{
-    @apply grid grid-cols-2 gap-4 justify-center
+.skill-container {
+    @apply flex justify-center py-2 px-8
 }
 
 
-.skill-container .skill{
-    @apply flex flex-col justify-center items-center p-5 bg-[#dfd8d81f] shadow-2xl rounded-lg mr-5 mb-5
+.skill-container .skill {
+    @apply flex flex-col justify-center items-center p-5 bg-[#dfd8d81f] shadow-2xl rounded-lg m-5 w-full border-solid border-2 hover:border-green-700 border-white
 }
 
 
-.skill-container .skill .skill-title, .skill-rate{
+.skill-container .skill .skill-title, .skill-rate {
     @apply flex justify-center items-center
 }
 
-.skill-container .skill .skill-title h2{
+.skill-container .skill .skill-title h2 {
     @apply text-black
 }
 
@@ -202,28 +201,39 @@
 }
 
 
-.skill-bar .bar{
+.skill-bar .bar {
     @apply my-5 mx-0 first:mt-0
 }
 
 
-.skill-bar .bar .sub-skill{
+.skill-bar .bar .sub-skill {
     @apply mb-1
 }
 
-.skill-bar .bar .sub-skill span{
+.skill-bar .bar .sub-skill span {
     @apply text-sm font-light opacity-0 text-black animate-text
 }
 
-.skill-bar .bar .progress-line{
+.skill-bar .bar .progress-line {
     @apply relative rounded h-2.5 w-full origin-left scale-x-0 bg-[#e2dede] shadow-mirror-gray animate-progress
 }
 
 
-.skill-bar .bar .progress-line span{
-    @apply absolute rounded h-full origin-left scale-x-0 bg-[#f4d03f] animate-progress bg-gradient-to-bl from-green-700 to-yellow-200
-}
+/* .skill-bar .bar .progress-line span {
+    @apply absolute rounded h-full origin-left scale-x-0 bg-[#f4d03f] animate-progress bg-gradient-to-bl from-green-700 to-yellow-200 before:content-[''] before:absolute before:right-0 before:top-[-10px] before:h-0 before:w-0 before:border-8 before:border-solid before:border-transparent before:border-b-0 before:border-r-0 before:border-y-black before:opacity-50 animate-bprogress after:absolute after:r-0 after:top-[-25px] after:text-white after:text-[10px] after:font-medium after:bg-black after:py-0.5 after:px-0.5 after:rounded-sm animate-bprogress
+} */
 
+.skill-bar .bar .progress-line span {
+    @apply absolute rounded h-full origin-left scale-x-0 bg-[#f4d03f] animate-progress bg-gradient-to-bl from-green-700 to-yellow-200;
 
-
-
+    &::before {
+      @apply absolute right-0 top-[-10px] h-0 w-0 border-8 border-solid border-transparent border-b-0 border-r-0 opacity-50 animate-bprogress;
+      content: ''; 
+    }
+  
+    &::after {
+      @apply absolute r-0 top-[-25px] text-white text-[10px] font-medium bg-black py-0.5 px-0.5 rounded-sm animate-bprogress;
+      content: ''; 
+    }
+  }
+  

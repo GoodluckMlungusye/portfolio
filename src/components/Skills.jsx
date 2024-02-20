@@ -14,7 +14,7 @@ const Skills = () => {
                     <div className="sub-skill">
                     <span>{subSkill.name}</span>
                     </div>
-                    <div className={`progress-line ${subSkill.class}`}><span></span></div>
+                    <div className={`progress-line ${subSkill.class}`}><span className={`w-[${subSkill.percentage}%]`}></span></div>
                 </div>
                 ))}
             </div>
