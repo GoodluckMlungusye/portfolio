@@ -177,3 +177,53 @@
 }
 
 
+/* SKILLS */
+.skill-container{
+    @apply grid grid-cols-2 gap-4 justify-center
+}
+
+
+.skill-container .skill{
+    @apply flex flex-col justify-center items-center p-5 bg-[#dfd8d81f] shadow-2xl rounded-lg mr-5 mb-5
+}
+
+
+.skill-container .skill .skill-title, .skill-rate{
+    @apply flex justify-center items-center
+}
+
+.skill-container .skill .skill-title h2{
+    @apply text-black
+}
+
+
+.skill-bar {
+    @apply flex flex-wrap justify-center flex-col py-1 px-2.5 bg-[#dfd8d81f] rounded-lg w-64
+}
+
+
+.skill-bar .bar{
+    @apply my-5 mx-0 first:mt-0
+}
+
+
+.skill-bar .bar .sub-skill{
+    @apply mb-1
+}
+
+.skill-bar .bar .sub-skill span{
+    @apply text-sm font-light opacity-0 text-black animate-text
+}
+
+.skill-bar .bar .progress-line{
+    @apply relative rounded h-2.5 w-full origin-left scale-x-0 bg-[#e2dede] shadow-mirror-gray animate-progress
+}
+
+
+.skill-bar .bar .progress-line span{
+    @apply absolute rounded h-full origin-left scale-x-0 bg-[#f4d03f] animate-progress bg-gradient-to-bl from-green-700 to-yellow-200
+}
+
+
+
+
