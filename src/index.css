@@ -219,21 +219,7 @@
 }
 
 
-/* .skill-bar .bar .progress-line span {
-    @apply absolute rounded h-full origin-left scale-x-0 bg-[#f4d03f] animate-progress bg-gradient-to-bl from-green-700 to-yellow-200 before:content-[''] before:absolute before:right-0 before:top-[-10px] before:h-0 before:w-0 before:border-8 before:border-solid before:border-transparent before:border-b-0 before:border-r-0 before:border-y-black before:opacity-50 animate-bprogress after:absolute after:r-0 after:top-[-25px] after:text-white after:text-[10px] after:font-medium after:bg-black after:py-0.5 after:px-0.5 after:rounded-sm animate-bprogress
-} */
-
 .skill-bar .bar .progress-line span {
-    @apply absolute rounded h-full origin-left scale-x-0 bg-[#f4d03f] animate-progress bg-gradient-to-bl from-green-700 to-yellow-200;
+    @apply absolute rounded h-full origin-left scale-x-0 bg-[#f4d03f] animate-sprogress bg-gradient-to-bl from-green-700 to-yellow-200 before:content-[''] before:absolute before:right-0 before:top-[-10px] before:h-0 before:w-0 before:border-8 before:border-solid before:border-transparent before:border-b-0 before:border-r-0 before:border-y-black before:opacity-50 before:animate-pseudoprogress after:absolute after:right-0 after:top-[-25px] after:text-white after:text-[10px] after:font-medium after:bg-black after:py-0.5 after:px-0.5 after:rounded-sm after:animate-pseudoprogress
 
-    &::before {
-      @apply absolute right-0 top-[-10px] h-0 w-0 border-8 border-solid border-transparent border-b-0 border-r-0 opacity-50 animate-bprogress;
-      content: ''; 
-    }
-  
-    &::after {
-      @apply absolute r-0 top-[-25px] text-white text-[10px] font-medium bg-black py-0.5 px-0.5 rounded-sm animate-bprogress;
-      content: ''; 
-    }
-  }
-  
+}

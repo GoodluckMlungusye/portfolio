@@ -1,5 +1,7 @@
 import skills from "../Data/Skills";
 
+
+
 const Skills = () => {
 
   const displaySkillCard = skills.map((skill) => (
@@ -14,7 +16,8 @@ const Skills = () => {
                     <div className="sub-skill">
                     <span>{subSkill.name}</span>
                     </div>
-                    <div className={`progress-line ${subSkill.class}`}><span className={`w-[${subSkill.percentage}%]`}></span></div>
+                    <div className="progress-line"><span className={`w-[${subSkill.percentage}%] after:content-['${subSkill.percentage}%']`}></span></div>
+                    {/* <div className="progress-line"><span className="w-[45%] after:content-['45%']"></span></div> */}
                 </div>
                 ))}
             </div>
@@ -22,6 +25,7 @@ const Skills = () => {
   </div>
   ));
 
+  
   return (
     <div id="skills">
       <div className="title">

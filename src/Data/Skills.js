@@ -43,7 +43,7 @@ const skills = [
         'id': 'Miscellaneous',
         'sub-skills': [
             {
-                "name": "Figma (UI/UX Designing)",
+                "name": "Figma",
                 "percentage": 80,
                 "class": "figma"
             },
@@ -55,7 +55,7 @@ const skills = [
             },
 
             {
-                "name": "Agile Project Management - Scrum",
+                "name": "Agile - Scrum",
                 "percentage": 85,
                 "class": "scrum"
             }

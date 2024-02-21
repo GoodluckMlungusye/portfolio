@@ -40,10 +40,13 @@ module.exports = {
       animation: {
         text : 'text 0.5s 1s linear forwards',
         progress: 'progress 1s cubic-bezier(1,0,0.5,1) forwards',
-        bprogress: 'text 0.5s 1.5s linear forwards'
+        sprogress: 'progress 1s 1s cubic-bezier(1,0,0.5,1) forwards',
+        pseudoprogress: 'text 0.5s 1.5s linear forwards'
       }
-      
+
     },
   },
   plugins: [],
 }
+
+
