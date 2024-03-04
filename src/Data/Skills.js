@@ -3,21 +3,14 @@ const skills = [
         'id': 'Frontend',
         'sub-skills': [
             {
-                "name": "HTML",
-                "percentage": 90,
-                "class": "html"
-            },
-
-            {
-                "name": "Tailwind CSS",
-                "percentage": 90,
-                "class": "css"
-            },
-
-            {
                 "name": "React Js",
-                "percentage": 70,
+                "percentage": 80,
                 "class": "react"
+            },
+            {
+                "name": "Flutter",
+                "percentage": 85,
+                "class": "flutter"
             }
         ]
     },
@@ -27,41 +20,17 @@ const skills = [
         'sub-skills': [
             {
                 "name": "Spring boot",
-                "percentage": 75,
+                "percentage": 70,
                 "class": "spring"
             },
 
             {
                 "name": "Laravel",
-                "percentage": 80,
+                "percentage": 75,
                 "class": "laravel"
             }
         ]
     },
-
-    {
-        'id': 'Miscellaneous',
-        'sub-skills': [
-            {
-                "name": "Figma",
-                "percentage": 80,
-                "class": "figma"
-            },
-
-            {
-                "name": "Docker",
-                "percentage": 75,
-                "class": "docker"
-            },
-
-            {
-                "name": "Agile - Scrum",
-                "percentage": 85,
-                "class": "scrum"
-            }
-        ]
-    },
-
 
     {
         'id': 'DBMS',
@@ -79,6 +48,23 @@ const skills = [
             }
         ]
     },
+
+    {
+        'id': 'Miscellaneous',
+        'sub-skills': [
+            {
+                "name": "Docker",
+                "percentage": 75,
+                "class": "docker"
+            },
+
+            {
+                "name": "Agile - Scrum",
+                "percentage": 85,
+                "class": "scrum"
+            }
+        ]
+    }
     
 ]
 

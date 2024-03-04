@@ -31,17 +31,11 @@ module.exports = {
       keyframes: {
        text : {
           '100%' : {opacity: '1'}
-        },
-       progress: {
-          '100%': {transform: 'scaleX(1)'}
-       }
+        }
       },
 
       animation: {
         text : 'text 0.5s 1s linear forwards',
-        progress: 'progress 1s cubic-bezier(1,0,0.5,1) forwards',
-        sprogress: 'progress 1s 1s cubic-bezier(1,0,0.5,1) forwards',
-        pseudoprogress: 'text 0.5s 1.5s linear forwards'
       }
 
     },

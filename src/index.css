@@ -178,12 +178,12 @@
 
 /* SKILLS */
 .skill-container {
-    @apply flex justify-center py-2 px-8
+    @apply flex flex-col md:grid md:grid-cols-2 md:gap-4 py-2 px-8 md:even:mr-14 even:mr-0  md:even:ml-5 even:ml-0
 }
 
 
 .skill-container .skill {
-    @apply flex flex-col justify-center items-center p-5 bg-[#dfd8d81f] shadow-2xl rounded-lg m-5 w-full border-solid border-2 hover:border-green-700 border-white
+    @apply flex flex-col p-5 bg-[#dfd8d81f] shadow-2xl rounded-lg md:m-5 m-0 md:mb-0 mb-6 w-full border-solid border-2 hover:border-green-700 border-white 
 }
 
 
@@ -197,7 +197,7 @@
 
 
 .skill-bar {
-    @apply flex flex-wrap justify-center flex-col py-1 px-2.5 bg-[#dfd8d81f] rounded-lg w-64
+    @apply flex flex-wrap justify-center flex-col py-1 px-2.5 bg-[#dfd8d81f] rounded-lg w-full
 }
 
 
@@ -214,12 +214,35 @@
     @apply text-sm font-light opacity-0 text-black animate-text last:font-normal flex justify-between flex-row
 }
 
-.skill-bar .bar .progress-line {
-    @apply relative rounded h-2.5 w-full origin-left scale-x-0 bg-[#e2dede] shadow-mirror-gray animate-progress
-}
+.skill-bar .bar .progress-line{
+    position: relative;
+    border-radius: 3px;
+    height: 10px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #e2dede;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05), 0px 1px rgba(255,255,255,0.8) ;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+} 
 
 
-.skill-bar .bar .progress-line span {
-    @apply absolute rounded h-full origin-left scale-x-0 bg-[#f4d03f] animate-sprogress bg-gradient-to-bl from-green-700 to-yellow-200 
+.skill-bar .bar .progress-line span{
+    height: 100%;
+    background-color: #f4d03f;
+    background-image: linear-gradient(to bottom left,green, yellow); 
+    position: absolute;
+    border-radius: 3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s  cubic-bezier(1,0,0.5,1) forwards;
+} 
+
+
+@keyframes animate{
+
+    100%{
+        transform: scaleX(1);
+    }
 
 }
