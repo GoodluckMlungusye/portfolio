@@ -62,6 +62,11 @@ const skills = [
                 "name": "Agile - Scrum",
                 "percentage": 85,
                 "class": "scrum"
+            },
+            {
+                "name": "UI/UX Designing",
+                "percentage": 80,
+                "class": "ui"
             }
         ]
     }
