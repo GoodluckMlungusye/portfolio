@@ -12,21 +12,21 @@ const services = [
         'id': 2,
         'name': 'FRONTEND',
         'description': 'Responsive frontend development for intuitive user interfaces on websites and mobile applications, ensuring seamless user experiences.',
-        'image': 'assets/backend.jpg'
+        'image': 'assets/frontend.jpg'
     },
 
     {
         'id': 3,
         'name': 'WEBSITE HOSTING',
         'description': 'Secure website hosting solutions for uninterrupted online presence. Expert support and robust infrastructure for optimal performance',
-        'image': 'assets/backend.jpg'
+        'image': 'assets/hosting.jpg'
     },
 
     {
         'id': 4,
         'name': 'DATABASE DESIGNING',
         'description': 'Expert database design for efficient data organization, retrieval, and management, optimizing performance and scalability for your application',
-        'image': 'assets/ui.png'
+        'image': 'assets/db.jpg'
     },
 
     {
