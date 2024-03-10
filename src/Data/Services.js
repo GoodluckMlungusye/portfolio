@@ -1,41 +1,35 @@
 const services = [
-
     {
         'id': 1,
         'name': 'BACKEND',
-        'description': "Powerful backend solutions for data management and server-side operations, ensuring seamless functionality and scalability.",
+        'description': "As a backend development expert, I provide potent solutions for data management and server-side operations. My specialization in architecting robust backend systems ensures seamless functionality and scalability, optimizing databases and APIs for high performance, security, and reliability.",
         'image': 'assets/backend.jpg'
     },
-    
-
     {
         'id': 2,
         'name': 'FRONTEND',
-        'description': 'Responsive frontend development for intuitive user interfaces on websites and mobile applications, ensuring seamless user experiences.',
-        'image': 'assets/frontend.jpg'
+        'description': "Frontend development expert creating responsive interfaces for intuitive experiences. Creative tech integration ensures immersive interactions, promoting seamless navigation. Meticulously designed interfaces prioritize usability, accessibility, and aesthetics for unparalleled experience.",
+        'image': 'assets/backend.jpg'
     },
-
     {
         'id': 3,
         'name': 'WEBSITE HOSTING',
-        'description': 'Secure website hosting solutions for uninterrupted online presence. Expert support and robust infrastructure for optimal performance',
-        'image': 'assets/hosting.jpg'
+        'description': "As a seasoned professional, I provide secure website hosting solutions for uninterrupted online presence. Experience peace of mind with reliable hosting services, backed by expert support and robust infrastructure. Offering scalable hosting solutions tailored to specific requirements ensures continuous uptime and optimal performance.",
+        'image': 'assets/db.jpg'
     },
-
     {
         'id': 4,
         'name': 'DATABASE DESIGNING',
-        'description': 'Expert database design for efficient data organization, retrieval, and management, optimizing performance and scalability for your application',
+        'description': "Specializing in database design, I offer efficient solutions for data organization, retrieval, and management. Leveraging industry best practices ensures scalable and optimized database solutions that meet evolving needs. Expertise in designing tailored solutions maximizes efficiency and minimizes latency.",
         'image': 'assets/db.jpg'
     },
-
     {
         'id': 5,
         'name': 'UI/UX DESIGNING',
-        'description': 'Crafting visually stunning and user-friendly interfaces, enhancing usability and elevating brand identity for impactful digital experiences.',
-        'image': 'assets/ui.png'
-    },
-    
+        'description': "As a UI/UX designer, I craft visually appealing, user-friendly interfaces that enhance brand identity. Thorough research guides designs, catering to user needs for seamless, intuitive interactions, shaping impactful digital experiences.",
+        'image': 'assets/db.jpg'
+    }
 ]
+
 
 export default services
