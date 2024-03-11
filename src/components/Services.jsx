@@ -13,7 +13,7 @@ const Services = () => {
           <img src={service.image} alt={service.id}/>
         </div>
         <div className="service-content">
-          <div>
+          <div className="service-content-wrapper">
             <h2>{service.name}</h2>
             <p>{service.description}</p>
           </div>
@@ -23,7 +23,7 @@ const Services = () => {
   ));
 
   return (
-    <div id="services">
+    <div id="services" className="service-container">
       <div className="title">
         <h3>
           <span>S</span>ervices
@@ -42,6 +42,7 @@ const Services = () => {
           modifier: 2,
         }}
         modules={[EffectCoverflow]}
+        className="swiper-container"
       >
         {displaySwiperSlides}
       </Swiper>

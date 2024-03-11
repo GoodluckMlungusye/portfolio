@@ -250,23 +250,23 @@
 
 /* SERVICES */
 
+.service-container {
+  @apply max-w-[124rem] py-8 px-4 my-0 mx-auto
+}
+
+.swiper-container {
+  @apply py-8 px-0 relative
+}
+
 .swiper-slide {
-  @apply !w-1/4 
+  @apply !w-[25rem] !h-[30rem] min-[500px]:!w-[30rem] min-[500px]:!h-[35rem] !relative
 }
 
-.service-box{
-  @apply relative overflow-hidden duration-500 rounded-lg size-full
+.swiper-slide img{
+  @apply !w-[25rem] !h-[30rem] min-[500px]:!w-[30rem] min-[500px]:!h-[35rem] rounded-lg object-cover
 }
 
-.service-box .service-img{
-  @apply  w-full h-full rounded-lg
-}
-
-.swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right{
-  @apply !bg-none !hidden
-}
-
-.swiper-slide-active  .service-box .service-img:before{
+.swiper-slide-active .service-img:before{
   content: '';
   position: absolute;
   top: 0;
@@ -278,15 +278,24 @@
   mix-blend-mode: multiply;
   opacity: 1;
   transition: 0.5s;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
-.service-box .service-img img{
-  @apply  w-full h-full object-cover rounded-lg
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  @apply !hidden
+}
+
+.service-box{
+  @apply relative overflow-hidden duration-500 rounded-lg size-full
 }
 
 .service-box .service-content{
-  @apply absolute top-0 left-0 w-full h-full z-[2] flex p-5 items-center rounded-lg
+  @apply absolute top-0 left-0 w-full h-full z-[2] flex p-5 items-center rounded-lg 
+}
+
+.service-box .service-content .service-content-wrapper{
+  @apply min-[416px]:p-0 p-8
 }
 
 .service-box .service-content h2{
@@ -294,7 +303,7 @@
 }
 
 .swiper-slide-active .service-box .service-content h2{
-  @apply translate-y-40 delay-[600ms]
+  @apply  translate-y-24 min-[430px]:translate-y-28 min-[500px]:translate-y-40 delay-[600ms] min-[430px]:text-base text-xs
 }
 
 .service-box .service-content p{
@@ -302,122 +311,8 @@
 }
 
 .swiper-slide-active .service-box .service-content p{
-  @apply translate-y-40 delay-[700ms]
-}
-
-
-/* 
-  .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right{
-    @apply !bg-none
-  }
-  
-  .service-box{
-    @apply relative w-60 overflow-hidden duration-500
-  }
-
-  .swiper-slide-active .service-box{
-    @apply z-[1] shadow-2xl
-  }
-
-  .service-box .service-img{
-    @apply absolute top-0 left-0 w-full h-full rounded-lg
-  }
-
-  
-  .swiper-slide-active  .service-box .service-img:before{
-
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: linear-gradient(180deg,#746868,#0e0d0d);
-    mix-blend-mode: multiply;
-    opacity: 0;
-    transition: 0.5s;
-    border-radius: 10px;
-  }
-
-  .swiper-slide-active  .service-box .service-img{
-    @apply before:opacity-100
-  }
-
-  .service-box .service-img img{
-    @apply absolute top-0 left-0 w-full h-full object-cover rounded-lg
-  }
-
-  .service-box .service-content{
-    @apply absolute top-0 left-0 w-full h-full z-[2] flex p-5 items-center rounded-lg
-  }
-  
-  .service-box .service-content h2{
-    @apply text-white duration-500 uppercase mb-1 text-[15px] translate-y-52
-  }
-
-  .swiper-slide-active .service-box .service-content h2{
-    @apply translate-y-0 delay-[600ms]
-  }
-
-  .service-box .service-content p{
-    @apply text-white duration-500 text-sm translate-y-52 
-  }
-
-  .swiper-slide-active .service-box .service-content p{
-    @apply translate-y-0 delay-[700ms]
-  }
- */
-
-
-
-/* 
-  .service-container {
-    max-width: 124rem;
-    padding: 4rem 1rem;
-    margin: 0 auto;
-  }
-  
-  .swiper-container {
-    height: 52rem;
-    padding: 2rem 0;
-    position: relative;
-  }
-   
-  .swiper-slide {
-    width: 37rem;
-    height: 42rem;
-    position: relative;
-  }
-  
-  @media (max-width: 500px) {
-    .swiper-container {
-      height: 47rem;
-    }
-    .swiper-slide {
-      width: 28rem !important;
-      height: 36rem !important;
-    }
-    .swiper-slide img {
-      width: 28rem !important;
-      height: 36rem !important;
-    }
-  }
-  
-  .swiper-slide img {
-    width: 37rem;
-    height: 42rem;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  .swiper-slide-shadow-left,
-  .swiper-slide-shadow-right {
-    display: none;
-  }
-   */
-
-  
+  @apply translate-y-24 min-[430px]:translate-y-28 min-[500px]:translate-y-40 delay-[700ms] min-[430px]:text-sm text-xs
+} 
 
 
 
