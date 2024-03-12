@@ -314,7 +314,21 @@
   @apply translate-y-24 min-[430px]:translate-y-28 min-[500px]:translate-y-40 delay-[700ms] min-[430px]:text-sm text-xs
 } 
 
+.scroll-right{
+  @apply  pt-4 flex items-center justify-center
+}
 
+.scroll-right svg{
+    animation: bounce 1s infinite;
+  }
 
-  
-
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}

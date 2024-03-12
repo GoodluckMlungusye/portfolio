@@ -3,14 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import "swiper/css/navigation";
 
 const Services = () => {
   const displaySwiperSlides = services.map((service) => (
     <SwiperSlide key={service.id}>
       <div className="service-box">
         <div className="service-img">
-          <img src={service.image} alt={service.id}/>
+          <img src={service.image} alt={service.id} />
         </div>
         <div className="service-content">
           <div className="service-content-wrapper">
@@ -45,6 +44,22 @@ const Services = () => {
         className="swiper-container"
       >
         {displaySwiperSlides}
+        <div className="scroll-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="icon"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
       </Swiper>
     </div>
   );

@@ -9,13 +9,13 @@ const services = [
         'id': 2,
         'name': 'FRONTEND',
         'description': "Frontend development expert creating responsive interfaces for intuitive experiences. Creative tech integration ensures immersive interactions, promoting seamless navigation. Meticulously designed interfaces prioritize usability, accessibility, and aesthetics for unparalleled experience.",
-        'image': 'assets/backend.jpg'
+        'image': 'assets/frontend.jpg'
     },
     {
         'id': 3,
         'name': 'WEBSITE HOSTING',
         'description': "As a seasoned professional, I provide secure website hosting solutions for uninterrupted online presence. Experience peace of mind with reliable hosting services, backed by expert support and robust infrastructure. Offering scalable hosting solutions tailored to specific requirements ensures continuous uptime and optimal performance.",
-        'image': 'assets/db.jpg'
+        'image': 'assets/hosting.jpg'
     },
     {
         'id': 4,
@@ -27,7 +27,7 @@ const services = [
         'id': 5,
         'name': 'UI/UX DESIGNING',
         'description': "As a UI/UX designer, I craft visually appealing, user-friendly interfaces that enhance brand identity. Thorough research guides designs, catering to user needs for seamless, intuitive interactions, shaping impactful digital experiences.",
-        'image': 'assets/db.jpg'
+        'image': 'assets/ui.png'
     }
 ]
 
