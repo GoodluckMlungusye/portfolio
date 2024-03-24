@@ -1,5 +1,6 @@
 import { useState } from "react";
 import educations from "../Data/Education"
+import {IMAGE_URL} from "../Data/Constants"
 
 const Education = () => {
 
@@ -15,7 +16,7 @@ const Education = () => {
     const displayEducationCard = educations.map((education) => (
         <div className="box" key={education.id}> 
           <div className="image">
-            <img src={education.image} alt={education.institute} />
+            <img src={`${IMAGE_URL}/${education.image}`} alt={education.institute} />
           </div>
           <div className="content">
              <div className="duration">

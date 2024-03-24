@@ -3,13 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
+import {IMAGE_URL} from "../Data/Constants"
 
 const Services = () => {
   const displaySwiperSlides = services.map((service) => (
     <SwiperSlide key={service.id}>
       <div className="service-box">
         <div className="service-img">
-          <img src={service.image} alt={service.id} />
+          <img src={`${IMAGE_URL}/${service.image}`}  alt={service.id} />
         </div>
         <div className="service-content">
           <div className="service-content-wrapper">

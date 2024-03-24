@@ -8,7 +8,7 @@ const explorations = [
     {
         'id': 'project',
         'description': 'Projects accomplished',
-        'counts': 8
+        'counts': 10
     },
 
     {

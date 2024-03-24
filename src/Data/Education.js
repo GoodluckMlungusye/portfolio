@@ -5,7 +5,7 @@ const educations = [
         'duration': '2020 - 2023',
         'institute': 'UDSM',
         'programme': 'Computer Science',
-        'image': 'assets/udsm.jpg'
+        'image': 'udsm.jpg'
     },
     
 
@@ -15,7 +15,7 @@ const educations = [
         'duration': '2018 - 2020',
         'institute': 'Kibaha Secondary',
         'programme': 'ACSEE',
-        'image': 'assets/kibaha.jpg'
+        'image': 'kibaha.jpg'
     },
     
 
@@ -25,7 +25,7 @@ const educations = [
         'duration': '2014 - 2017',
         'institute': 'Abbey Secondary',
         'programme': 'CSEE',
-        'image': 'assets/abbey.jpg'
+        'image': 'abbey.jpg'
     }
 ]
 

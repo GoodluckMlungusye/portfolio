@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Skills from "./components/Skills";
 import Services from "./components/Services";
+import Projects from "./components/Projects";
 
 function App() {
 
@@ -20,9 +21,7 @@ function App() {
         <About/>
         <Skills/>
         <Services/>
-          <div className="flex items-center justify-center h-screen bg-fuchsia-900 m-7 rounded-3xl" id='projects'>
-              <h1>projects</h1>
-          </div>
+        <Projects/>
           <div className="flex items-center justify-center h-screen bg-fuchsia-900 m-7 rounded-3xl" id='contact'>
               <h1>contact me</h1>
           </div>
