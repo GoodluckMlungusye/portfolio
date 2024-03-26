@@ -393,3 +393,38 @@
   .card .button button span{
     @apply pr-2  min-[420px]:text-base text-sm
   }
+
+  /* CONTACTS */
+
+.contact-container {
+    @apply bg-black w-full flex
+}
+
+.media-icon:hover {
+    background-color: #02B90E;
+}
+
+.media-icon {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.linkedin {
+    margin-right: 1px;
+    margin-top: 6px;
+    width: 20px;
+    height: 20px;
+}
+
+.github {
+    margin-top: 6px;
+    width: 25px;
+    height: 25px;
+}
