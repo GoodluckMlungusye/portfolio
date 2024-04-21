@@ -47,7 +47,7 @@ const Explore = (props) => {
   const displayExploreItems = explorations.map((explore) => (
     <div className="e-box" key={explore.id}>
       <div className="e-content">
-        <h1 id={`${explore.id}`}>{explore.count}</h1>
+        <div><h1 id={`${explore.id}`}>{explore.count}</h1><span className="plus">+</span></div>
         <p>{explore.description}</p>
       </div>
     </div>

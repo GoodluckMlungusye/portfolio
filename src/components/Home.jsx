@@ -40,7 +40,7 @@ const Home = () => {
             </p>
             </Fade>
             <Fade direction="up" triggerOnce>
-            <Link to="about" smooth={true} duration={500} className="cursor-pointer">
+            <Link to="about" smooth={true} duration={500} offset={-145}className="cursor-pointer">
             <button className="btn">
               Get Started
             </button>

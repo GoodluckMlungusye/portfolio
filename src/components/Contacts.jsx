@@ -3,23 +3,23 @@ import { IMAGE_URL } from "../Data/Constants";
 
 const Contacts = () => {
   return (
-    <div id="contact">
+    <div id="contact" className="contact">
       <div className="title">
         <h3>
           <span>C</span>ontact <span>M</span>e
         </h3>
       </div>
 
-      <div className="contact-container text-white">
+      <div className="contact-container">
         <div>
-          <div>
-            <span> GET IN TOUCH</span>
-            <div>
+          <div className="contact-info">
+            <span className="head"> GET IN TOUCH</span>
+            <div className="media">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-6 h-6"
+                className="icon"
               >
                 <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
                 <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
@@ -35,12 +35,12 @@ const Contacts = () => {
                 </a>
               </span>
             </div>
-            <div>
+            <div className="media">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-6 h-6"
+                className="icon"
               >
                 <path d="M10.5 18.75a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" />
                 <path
@@ -53,7 +53,7 @@ const Contacts = () => {
             </div>
           </div>
 
-          <div>
+          <div className="media-info">
             <div className="media-icon">
               <a
                 href="https://www.linkedin.com/in/goodluck-mlungusye-901963214/"
@@ -85,19 +85,21 @@ const Contacts = () => {
         </div>
 
         <div>
-          <span>Download CV</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10.5 3.75a6 6 0 0 0-5.98 6.496A5.25 5.25 0 0 0 6.75 20.25H18a4.5 4.5 0 0 0 2.206-8.423 3.75 3.75 0 0 0-4.133-4.303A6.001 6.001 0 0 0 10.5 3.75Zm2.25 6a.75.75 0 0 0-1.5 0v4.94l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V9.75Z"
-              clipRule="evenodd"
-            />
-          </svg>
+          <button className="cv">
+            <span>Download CV</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="icon"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10.5 3.75a6 6 0 0 0-5.98 6.496A5.25 5.25 0 0 0 6.75 20.25H18a4.5 4.5 0 0 0 2.206-8.423 3.75 3.75 0 0 0-4.133-4.303A6.001 6.001 0 0 0 10.5 3.75Zm2.25 6a.75.75 0 0 0-1.5 0v4.94l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V9.75Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>

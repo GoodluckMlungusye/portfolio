@@ -1,7 +1,6 @@
 import React from "react";
 import projects from "../Data/Projects";
-import {GITHUB_URL} from "../Data/Constants"
-import {IMAGE_URL} from "../Data/Constants"
+import {GITHUB_URL, IMAGE_URL} from "../Data/Constants"
 
 const Projects = () => {
 
@@ -33,7 +32,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div class="button">
+        <div className="button">
           <button
             style={{ background: `${project.color}` }}>
             <a href={`${GITHUB_URL}/${project.link}`} target="_blank" rel="noreferrer" className="flex items-center">
@@ -60,14 +59,23 @@ const Projects = () => {
   ));
 
   return (
-    <div id="projects">
+    <div id="projects" className="projects">
       <div className="title">
         <h3>
           <span>P</span>rojects
         </h3>
       </div>
 
-      <div className="project-container">{displayProjects}</div>
+      <div className="project-container">
+        {displayProjects}
+      </div>
+      <div className="viewmore">
+        <a  href={`${GITHUB_URL}`} target="_blank" rel="noopener noreferrer">
+          <button className="morebtn">
+            more projects
+          </button>
+        </a>
+      </div>
     </div>
   );
 };

@@ -9,31 +9,24 @@
 .body {
     @apply font-poppins m-0 p-0 box-border scroll-smooth transition-all duration-500
 }
-
 .btn {
     @apply hover:tracking-wider sm:hover:tracking-widest md:hover:tracking-btn duration-500 border-none rounded-lg text-xs sm:text-sm md:text-base text-white bg-green-700 inline-block py-2.5 px-7 my-5 mx-2.5 uppercase no-underline md:tracking-widest sm:tracking-wider tracking-wide ease-in
 }
-
 .icon {
     @apply md:w-6 md:h-6 w-5 h-5 text-green-700
 }
-
 .title {
-    @apply text-center p-7
+    @apply text-center p-7 mt-16
 }
-
 .title h3 {
     @apply text-black sm:text-3xl text-xl
 }
-
 .title h3 span {
     @apply text-green-700
 }
-
 .sub-title {
     @apply flex justify-center items-center mb-5
 }
-
 .sub-title p {
     @apply font-normal sm:text-xl text-black text-lg pl-2
 }
@@ -43,43 +36,33 @@
 .header {
     @apply flex justify-between items-center fixed top-0 left-0 w-full px-10 py-8 sm:px-20 z-[10000] duration-500
 }
-
 .header .link, .side-nav-bar .link {
     @apply font-semibold text-xl md:font-medium md:text-base text-white hover:border hover:rounded-lg hover:border-green-700 hover:p-2 duration-500 ease-in
 }
-
 .active {
     @apply border rounded-lg border-white md:border-green-700 p-2 duration-150 ease-in
 }
-
 .header.sticky {
     @apply bg-white py-10 sm:px-24 shadow-4xl
 }
-
 .header.sticky .link {
     @apply text-black
 }
-
 .header .menu-toggle {
     @apply w-6 h-6 text-white mr-4 md:hidden block cursor-pointer
 }
-
 .header.sticky .menu-toggle {
     @apply text-black
 }
-
 .header .navigation {
     @apply relative md:mr-6 hidden md:flex
 }
-
 .side-nav-bar {
     @apply w-full h-[calc(100%-100px)] fixed left-0 justify-center items-center flex-col bg-green-700 rounded-none md:hidden z-[10000] duration-500 flex
 }
-
 .side-nav-bar .link {
     @apply hover:border-white ml-[-20%]
 }
-
 .theme-icon {
     @apply md:w-6 md:h-6 w-5 h-5 rotate-180 text-green-700 cursor-pointer md:hover:w-7 md:hover:h-7 hover:w-6 hover:h-6 duration-500 ease-in
 }
@@ -89,22 +72,20 @@
 .banner {
     @apply relative w-full min-h-screen flex justify-center items-center bg-cover lg:px-0 px-6 min-[400px]:px-10
 }
-
 .banner .content {
-    @apply p-5 max-w-4xl text-center rounded-2xl shadow-3xl border-t border-l border-solid border-white/[.5] bg-mirror-gray/[.062] backdrop-blur-xs
+    @apply flex flex-col justify-center items-center p-5  max-w-4xl h-full min-[1540px]:max-w-screen-xl min-[1540px]:h-[32rem] text-center rounded-2xl shadow-3xl border-t border-l border-solid border-white/[.5] bg-mirror-gray/[.062] backdrop-blur-xs
 }
-
 .banner .content .name {
-    @apply text-base font-semibold min-[500px]:font-normal min-[400px]:text-xl min-[500px]:text-3xl sm:text-4xl md:text-5xl text-white
+    @apply text-base font-semibold min-[500px]:font-normal min-[400px]:text-xl min-[500px]:text-3xl sm:text-4xl md:text-5xl min-[1540px]:text-7xl text-white
 }
-
-
 .banner .content .profession {
-    @apply font-semibold min-[500px]:font-normal text-sm min-[400px]:text-lg min-[500px]:text-2xl sm:text-3xl md:text-4xl text-green-700 mt-7
+    @apply font-semibold min-[500px]:font-normal text-sm min-[400px]:text-lg min-[500px]:text-2xl sm:text-3xl md:text-4xl min-[1540px]:text-5xl text-green-700 mt-7
 }
-
 .banner .content .description {
-    @apply text-white text-xs min-[400px]:text-base min-[500px]:text-lg sm:text-xl md:text-2xl mt-5 tracking-widest
+    @apply text-white text-xs min-[400px]:text-base min-[500px]:text-lg sm:text-xl md:text-2xl min-[1540px]:text-4xl mt-5 tracking-widest
+}
+.banner .content .btn {
+    @apply min-[1540px]:text-xl
 }
 
 
@@ -112,65 +93,51 @@
 .box-container {
     @apply flex justify-center items-center
 }
-
-
 .inbox-container {
     @apply flex-wrap justify-center ml-8 flex-col min-[992px]:flex-row flex
 }
-
-
 .box-container .inbox-container .box {
     @apply rounded-xl m-6 min-[992px]:w-[30%] h-[25%] md:h-[30%] text-center p-1 bg-[#DFD8D81F] shadow-2xl w-[90%] min-[992px]:ml-0 min-[561px]:ml-[3%] ml-0
 }
-
 .box-container .inbox-container .box .image {
     @apply sm:h-72 w-[100%] rounded-lg overflow-hidden h-64
 }
-
 .box-container .inbox-container .box .image img {
     @apply h-[100%] w-[100%] object-cover transition duration-200 ease-linear
 }
-
 .box-container .inbox-container .box:hover .image img {
     @apply scale-125
 }
-
 .box-container .inbox-container .box .content .duration {
     @apply relative top-[-16px] sm:p-1 inline-block bg-[#B1A7A7D8] sm:rounded-md p-0.5 rounded
 }
-
 .box-container .inbox-container .box .content .duration span {
     @apply sm:text-xl my-0 mx-4 text-black text-lg
 }
-
 .box-container .inbox-container .box .content .duration a:hover {
     @apply text-green-700
 }
-
 .box-container .inbox-container .box .content h3 {
     @apply text-black text-sm sm:text-base
 }
-
 .box-container .inbox-container .box .content p {
     @apply text-black p-4 text-left text-sm sm:text-base duration-500 ease-in
 }
-
 .explore {
-    @apply flex justify-center items-center bg-[#d4cbcb59] w-full min-[555px]:h-52 md:h-64 min-[555px]:flex-row flex-col h-full min-[555px]:px-0 px-10 py-6
+    @apply flex justify-center items-center bg-[#d4cbcb59] w-full min-[555px]:h-52 md:h-72 min-[555px]:flex-row flex-col h-full min-[555px]:px-0 md:px-14 px-10 py-6
 }
-
 .explore .e-box {
-    @apply w-full min-[555px]:w-36 h-24 md:w-72 md:h-36 bg-white m-3 rounded md:rounded-lg md:p-8 p-4 shadow-2xl
+    @apply h-24 w-full md:h-48 md:w-full min-[555px]:w-36 min-[555px]:h-36 bg-white m-3 rounded md:rounded-lg md:p-8 p-4 shadow-2xl flex flex-col justify-center items-center
 }
-
 .explore .e-box .e-content {
     @apply text-center
 }
-
-.explore .e-box .e-content h1 {
+.explore .e-box .e-content div{
+    @apply flex justify-center items-center
+}
+.explore .e-box .e-content h1,.plus {
     @apply md:text-4xl font-semibold text-green-700 text-2xl
 }
-
 .explore .e-box .e-content p {
     @apply md:text-base text-xs
 }
@@ -180,40 +147,27 @@
 .skill-container {
     @apply flex flex-col md:grid md:grid-cols-2 md:gap-4 py-2 px-8 md:even:mr-14 even:mr-0  md:even:ml-5 even:ml-0
 }
-
-
 .skill-container .skill {
     @apply flex flex-col p-5 bg-[#dfd8d81f] shadow-2xl rounded-lg md:m-5 m-0 md:mb-0 mb-6 w-full border-solid border-2 border-white 
 }
-
-
 .skill-container .skill .skill-title, .skill-rate {
     @apply flex justify-center items-center
 }
-
 .skill-container .skill .skill-title h2 {
     @apply text-black
 }
-
-
 .skill-bar {
     @apply flex flex-wrap justify-center flex-col py-1 px-2.5 bg-[#dfd8d81f] rounded-lg w-full
 }
-
-
 .skill-bar .bar {
     @apply my-5 mx-0 first:mt-0
 }
-
-
 .skill-bar .bar .sub-skill {
     @apply mb-1
 }
-
 .skill-bar .bar .sub-skill span {
     @apply text-sm font-light opacity-0 text-black animate-text last:font-normal flex justify-between flex-row
 }
-
 .skill-bar .bar .progress-line{
     position: relative;
     border-radius: 3px;
@@ -225,8 +179,6 @@
     box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05), 0px 1px rgba(255,255,255,0.8) ;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 } 
-
-
 .skill-bar .bar .progress-line span{
     height: 100%;
     background-color: #f4d03f;
@@ -237,35 +189,26 @@
     transform-origin: left;
     animation: animate 1s 1s  cubic-bezier(1,0,0.5,1) forwards;
 } 
-
-
 @keyframes animate{
-
     100%{
         transform: scaleX(1);
     }
-
 }
 
 
 /* SERVICES */
-
 .service-container {
   @apply max-w-[124rem] py-8 px-4 my-0 mx-auto
 }
-
 .swiper-container {
   @apply py-8 px-0 relative
 }
-
 .swiper-slide {
   @apply !w-[25rem] !h-[30rem] min-[500px]:!w-[30rem] min-[500px]:!h-[35rem] !relative
 }
-
 .swiper-slide img{
   @apply !w-[25rem] !h-[30rem] min-[500px]:!w-[30rem] min-[500px]:!h-[35rem] rounded-lg object-cover
 }
-
 .swiper-slide-active .service-img:before{
   content: '';
   position: absolute;
@@ -280,49 +223,38 @@
   transition: 0.5s;
   border-radius: 8px;
 }
-
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right {
   @apply !hidden
 }
-
 .service-box{
   @apply relative overflow-hidden duration-500 rounded-lg size-full
 }
-
 .service-box .service-content{
   @apply absolute top-0 left-0 w-full h-full z-[2] flex p-5 items-center rounded-lg 
 }
-
 .service-box .service-content .service-content-wrapper{
   @apply min-[416px]:p-0 p-8
 }
-
 .service-box .service-content h2{
   @apply text-white duration-500 uppercase mb-1 text-[15px] translate-y-96
 }
-
 .swiper-slide-active .service-box .service-content h2{
   @apply  translate-y-24 min-[430px]:translate-y-28 min-[500px]:translate-y-40 delay-[600ms] min-[430px]:text-base text-xs
 }
-
 .service-box .service-content p{
   @apply text-white duration-500 text-sm translate-y-96 
 }
-
 .swiper-slide-active .service-box .service-content p{
   @apply translate-y-24 min-[430px]:translate-y-28 min-[500px]:translate-y-40 delay-[700ms] min-[430px]:text-sm text-xs
 } 
-
 .scroll-right{
   @apply  pt-4 flex items-center justify-center
 }
-
 .scroll-right svg{
-    animation: bounce 1s infinite;
+    animation: right 1s infinite;
   }
-
-@keyframes bounce {
+@keyframes right {
   0%, 100% {
     transform: translateX(-25%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
@@ -335,96 +267,126 @@
 
 
 /* PROJECTS */
-
-.project-container {
-    @apply bg-[#d4cbcb59] w-full flex flex-col min-[803px]:grid min-[1400px]:grid-cols-5 min-[1100px]:grid-cols-4 min-[870px]:grid-cols-3 min-[803px]:grid-cols-2 items-center justify-center min-[1100px]:pl-[3%] min-[970px]:pl-[7%] min-[840px]:pl-[4%] pl-[2%] py-10
+.projects{
+    @apply flex flex-col justify-center items-center
 }
-  .card{
-    @apply relative bg-white rounded-lg min-[870px]:w-64 min-[420px]:w-96 w-80 my-5 mx-0 hover:scale-105 transition-all duration-300 ease-in hover:shadow-2xl
-  }
-
-  .card::before{
+.projects .viewmore{
+    @apply  bg-[#d4cbcb59] w-full flex justify-center items-center pb-10 
+}
+.projects .morebtn{
+    @apply hover:tracking-wider sm:hover:tracking-widest md:hover:tracking-btn duration-500 border-none rounded-md  text-white bg-green-700 inline-block py-2.5 px-7 my-5 mx-2.5 uppercase no-underline md:tracking-widest sm:tracking-wider tracking-wide ease-in mt-[-20px]
+}
+.project-container {
+    @apply bg-[#d4cbcb59] w-full items-center justify-center py-20 min-[636px]:px-14 px-8 flex flex-col min-[636px]:grid min-[636px]:grid-cols-2 min-[914px]:grid-cols-3 min-[1191px]:grid-cols-4 min-[1469px]:grid-cols-5 gap-8 md:even:mr-14 even:mr-0  md:even:ml-5 even:ml-0 
+}
+.card{
+@apply relative bg-white rounded-lg w-full mx-0 hover:scale-105 transition-all duration-300 ease-in hover:shadow-2xl
+}
+.card::before{
     content: "";
     position: absolute;
     height:40%;
     width: 100%;
     background: linear-gradient(180deg,#d8cfcf,#6e6969);
     border-radius: 8px 8px 0 0;
-  }
-  
-   .card .card-content{
-    @apply flex flex-col items-center p-7 relative z-[100]
-  } 
-
-  .card .details{
-    @apply w-full flex flex-col justify-start mt-2 text-gray-700
-   }
-
-   .card .details .rate{
-    @apply font-bold min-[420px]:text-base text-sm
-   }
-
-   .card .details .technology{
-    @apply py-1 min-[420px]:text-base text-sm
-   }
-
-   .card .details .name{
-    @apply font-semibold uppercase min-[420px]:text-base text-sm
-   }
-
-   .card .image{
-    @apply min-[870px]:h-32 min-[870px]:w-32 min-[420px]:h-48 min-[420px]:w-48 w-40 h-40 rounded-[50%] p-1
 }
-
+.card .card-content{
+@apply flex flex-col items-center p-7 relative z-[100]
+} 
+.card .details{
+@apply w-full flex flex-col min-[636px]:justify-start justify-center min-[636px]:items-start items-center mt-2 text-gray-700
+}
+.card .details .rate{
+@apply font-bold min-[420px]:text-base text-sm
+}
+.card .details .technology{
+@apply py-1 min-[420px]:text-base text-sm
+}
+.card .details .name{
+@apply font-semibold uppercase min-[420px]:text-base text-sm
+}
+.card .image{
+@apply min-[870px]:h-32 min-[870px]:w-32 min-[420px]:h-48 min-[420px]:w-48 w-40 h-40 rounded-[50%] p-1
+}
 .card .image img{
     @apply h-full w-full object-cover rounded-[50%] border-solid border-2 border-white
   }
+.card .button{
+@apply w-full flex min-[636px]:justify-start justify-center mt-5
+}
+.card .button button{
+@apply outline-none border-none text-white py-2 px-5 rounded-md text-sm transition-all duration-300 ease-in-out cursor-pointer
+}
+.card .button button span{
+@apply pr-2  min-[420px]:text-base text-sm
+}
 
-
-   .card .button{
-    @apply w-full flex justify-start mt-5
-  }
-
-  
-  .card .button button{
-    @apply outline-none border-none text-white py-2 px-5 rounded-md text-sm transition-all duration-300 ease-in-out cursor-pointer
-  }
-
-  .card .button button span{
-    @apply pr-2  min-[420px]:text-base text-sm
-  }
 
   /* CONTACTS */
-
 .contact-container {
-    @apply bg-black w-full flex
+    @apply bg-black w-full flex p-8 text-white justify-between min-[500px]:flex-row flex-col
 }
-
-.media-icon:hover {
-    background-color: #02B90E;
+.contact-container span{
+    @apply opacity-60
 }
-
 .media-icon {
-    width: 30px;
-    height: 30px;
-    padding: 8px;
-    border-radius: 50%;
-    background-color: white;
+    @apply size-9 p-2 rounded-full bg-white flex justify-center items-center mr-8 hover:bg-green-700
+}
+.linkedin {
+    @apply size-5 mt-1 mr-2 
+}
+.github {
+    @apply size-5 mt-1
+}
+.cv{
+    @apply rounded-md border-2 border-green-700 border-solid flex justify-between min-[700px]:p-4 p-2 mt-8 min-[500px]:mt-0
+}
+.cv span{
+    @apply mr-4 min-[700px]:text-base text-sm
+}
+.cv svg{
+    @apply animate-bounce 
+}
+.contact-info{
+    @apply flex flex-col 
+}
+.contact-info .media{
+    @apply flex mb-4
+}
+.contact-info .media svg{
+    @apply mr-4
+}
+.contact-info .head{
+    @apply min-[700px]:text-4xl mb-4 text-3xl
+}
+.media-info{
+    @apply flex mt-5 pl-1
+}
+
+
+/* TO TOP BUTTON */
+.to-top{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    background-color: chartreuse;
+    width: 35px;
+    height: 35px;
+    border-radius:6px;
 }
 
-.linkedin {
-    margin-right: 1px;
-    margin-top: 6px;
-    width: 20px;
-    height: 20px;
+.top-visible{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
 
-.github {
-    margin-top: 6px;
-    width: 25px;
-    height: 25px;
+.top-svg{
+    @apply md:w-6 md:h-6 w-5 h-5 text-white
 }

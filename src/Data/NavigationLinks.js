@@ -22,12 +22,7 @@ const links = [
     {
         'id': 5,
         'name': 'projects'
-    },
-    
-    {
-        'id': 6,
-        'name': 'contact'
-    },
+    }
 ]
 
 export default links
