@@ -13,10 +13,10 @@
     @apply hover:tracking-wider sm:hover:tracking-widest md:hover:tracking-btn duration-500 border-none rounded-lg text-xs sm:text-sm md:text-base text-white bg-green-700 inline-block py-2.5 px-7 my-5 mx-2.5 uppercase no-underline md:tracking-widest sm:tracking-wider tracking-wide ease-in
 }
 .icon {
-    @apply md:w-6 md:h-6 w-5 h-5 text-green-700
+    @apply md:size-6 size-5 text-green-700
 }
 .title {
-    @apply text-center p-7 mt-16
+    @apply text-center p-7 mt-6
 }
 .title h3 {
     @apply text-black sm:text-3xl text-xl
@@ -49,7 +49,7 @@
     @apply text-black
 }
 .header .menu-toggle {
-    @apply w-6 h-6 text-white mr-4 md:hidden block cursor-pointer
+    @apply size-6 text-white mr-4 md:hidden block cursor-pointer
 }
 .header.sticky .menu-toggle {
     @apply text-black
@@ -63,10 +63,6 @@
 .side-nav-bar .link {
     @apply hover:border-white ml-[-20%]
 }
-.theme-icon {
-    @apply md:w-6 md:h-6 w-5 h-5 rotate-180 text-green-700 cursor-pointer md:hover:w-7 md:hover:h-7 hover:w-6 hover:h-6 duration-500 ease-in
-}
-
 
 /* HOME */
 .banner {
@@ -123,32 +119,38 @@
 .box-container .inbox-container .box .content p {
     @apply text-black p-4 text-left text-sm sm:text-base duration-500 ease-in
 }
+/* @apply bg-[#d4cbcb59] w-full items-center justify-center py-20 min-[636px]:px-14 px-8 flex flex-col min-[636px]:grid min-[636px]:grid-cols-2 min-[914px]:grid-cols-3 min-[1191px]:grid-cols-4 min-[1469px]:grid-cols-5 gap-8 md:even:mr-14 even:mr-0  md:even:ml-5 even:ml-0  */
+
 .explore {
-    @apply flex justify-center items-center bg-[#d4cbcb59] w-full min-[555px]:h-52 md:h-72 min-[555px]:flex-row flex-col h-full min-[555px]:px-0 md:px-14 px-10 py-6
+    @apply grid grid-cols-2 min-[1530px]:grid-cols-4 gap-6 justify-center items-center bg-[#d4cbcb59] w-full h-full md:px-12 px-4 py-6
 }
 .explore .e-box {
-    @apply h-24 w-full md:h-48 md:w-full min-[555px]:w-36 min-[555px]:h-36 bg-white m-3 rounded md:rounded-lg md:p-8 p-4 shadow-2xl flex flex-col justify-center items-center
+    @apply h-24 w-full md:h-48 md:w-full min-[555px]:w-36 min-[555px]:h-36 bg-white m-3 rounded md:rounded-lg md:p-8 p-4 shadow-2xl flex justify-between items-center
 }
 .explore .e-box .e-content {
-    @apply text-center
+    @apply flex flex-col justify-start
 }
 .explore .e-box .e-content div{
-    @apply flex justify-center items-center
+    @apply flex justify-start
 }
+.explore .e-box .e-image{
+    @apply flex justify-end size-36
+}
+
 .explore .e-box .e-content h1,.plus {
-    @apply md:text-4xl font-semibold text-green-700 text-2xl
+    @apply md:text-3xl font-semibold text-green-700 text-xl
 }
 .explore .e-box .e-content p {
-    @apply md:text-base text-xs
+    @apply md:text-sm text-xs
 }
 
 
 /* SKILLS */
 .skill-container {
-    @apply flex flex-col md:grid md:grid-cols-2 md:gap-4 py-2 px-8 md:even:mr-14 even:mr-0  md:even:ml-5 even:ml-0
+    @apply flex flex-col md:grid md:grid-cols-2 gap-6 py-2 md:px-14 px-4
 }
 .skill-container .skill {
-    @apply flex flex-col p-5 bg-[#dfd8d81f] shadow-2xl rounded-lg md:m-5 m-0 md:mb-0 mb-6 w-full border-solid border-2 border-white 
+    @apply flex flex-col p-5 bg-[#dfd8d81f] shadow-2xl rounded-lg w-full border-solid border-2 border-white 
 }
 .skill-container .skill .skill-title, .skill-rate {
     @apply flex justify-center items-center
@@ -277,7 +279,7 @@
     @apply hover:tracking-wider sm:hover:tracking-widest md:hover:tracking-btn duration-500 border-none rounded-md  text-white bg-green-700 inline-block py-2.5 px-7 my-5 mx-2.5 uppercase no-underline md:tracking-widest sm:tracking-wider tracking-wide ease-in mt-[-20px]
 }
 .project-container {
-    @apply bg-[#d4cbcb59] w-full items-center justify-center py-20 min-[636px]:px-14 px-8 flex flex-col min-[636px]:grid min-[636px]:grid-cols-2 min-[914px]:grid-cols-3 min-[1191px]:grid-cols-4 min-[1469px]:grid-cols-5 gap-8 md:even:mr-14 even:mr-0  md:even:ml-5 even:ml-0 
+    @apply bg-[#d4cbcb59] w-full items-center justify-center py-20 min-[636px]:px-12 px-4 flex flex-col min-[636px]:grid min-[636px]:grid-cols-2 min-[914px]:grid-cols-3 min-[1191px]:grid-cols-4 min-[1469px]:grid-cols-5 gap-8 md:even:mr-14 even:mr-0  md:even:ml-5 even:ml-0 
 }
 .card{
 @apply relative bg-white rounded-lg w-full mx-0 hover:scale-105 transition-all duration-300 ease-in hover:shadow-2xl
@@ -366,27 +368,11 @@
 
 /* TO TOP BUTTON */
 .to-top{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 16px;
-    right: 32px;
-    opacity: 0;
-    pointer-events: none;
-    transition: all .4s;
-    background-color: chartreuse;
-    width: 35px;
-    height: 35px;
-    border-radius:6px;
+    @apply flex justify-center items-center fixed bottom-4 right-8 opacity-0 pointer-events-none size-9 rounded-md bg-green-700 transition-all delay-500
 }
-
 .top-visible{
-    bottom: 32px;
-    pointer-events: auto;
-    opacity: 1;
-}
-
+    @apply bottom-8 opacity-100 pointer-events-auto
+} 
 .top-svg{
-    @apply md:w-6 md:h-6 w-5 h-5 text-white
+    @apply md:w-6 md:h-6 size-5 text-white
 }

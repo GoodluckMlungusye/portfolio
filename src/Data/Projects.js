@@ -1,12 +1,13 @@
 const projects = [
+
     {
-        'id': 1,
-        'name': 'UDVote',
-        'technology': 'Flutter',
-        'rate': 4,
-        'link': 'UDVote-app',
-        'color': '#7870F9',
-        'image': 'flutter.png'
+        'id': 5,
+        'name': 'AfyaPro',
+        'technology': 'PHP',
+        'rate': 3,
+        'link': 'afyapro',
+        'color': '#6082BB',
+        'image': 'php.png'
     },
     {
         'id': 2,
@@ -18,13 +19,13 @@ const projects = [
         'image': 'laravel.jpg'
     },
     {
-        'id': 3,
-        'name': 'Portfolio',
-        'technology': 'React',
-        'rate': 5,
-        'link': 'portfolio',
-        'color': '#00D8FF',
-        'image': 'react.jpg'
+        'id': 10,
+        'name': 'Java Foundations',
+        'technology': 'Java',
+        'rate': 4,
+        'link': 'java-foundation',
+        'color': '#12192C',
+        'image': 'java.png'
     },
     {
         'id': 4,
@@ -36,13 +37,13 @@ const projects = [
         'image': 'spring.jpg'
     },
     {
-        'id': 5,
-        'name': 'AfyaPro',
-        'technology': 'Laravel',
-        'rate': 3,
-        'link': 'afyapro',
-        'color': '#EF291E',
-        'image': 'laravel.jpg'
+        'id': 3,
+        'name': 'Portfolio',
+        'technology': 'React',
+        'rate': 5,
+        'link': 'portfolio',
+        'color': '#00D8FF',
+        'image': 'react.jpg'
     },
     {
         'id': 6,
@@ -54,20 +55,11 @@ const projects = [
         'image': 'react.jpg'
     },
     {
-        'id': 7,
-        'name': 'Quiz App',
+        'id': 1,
+        'name': 'UDVote',
         'technology': 'Flutter',
-        'rate': 3,
-        'link': 'quiz-app',
-        'color': '#7870F9',
-        'image': 'flutter.png'
-    },
-    {
-        'id': 8,
-        'name': 'E-commerce App',
-        'technology': 'Flutter',
-        'rate': 3,
-        'link': 'e-commerce-app',
+        'rate': 4,
+        'link': 'UDVote-app',
         'color': '#7870F9',
         'image': 'flutter.png'
     },
@@ -81,13 +73,22 @@ const projects = [
         'image': 'flutter.png'
     },
     {
-        'id': 10,
-        'name': 'Java Foundations',
-        'technology': 'Java',
-        'rate': 4,
-        'link': 'java-foundation',
-        'color': '#12192C',
-        'image': 'java.png'
+        'id': 8,
+        'name': 'E-commerce App',
+        'technology': 'Flutter',
+        'rate': 3,
+        'link': 'e-commerce-app',
+        'color': '#7870F9',
+        'image': 'flutter.png'
+    },
+    {
+        'id': 7,
+        'name': 'Quiz App',
+        'technology': 'Flutter',
+        'rate': 3,
+        'link': 'quiz-app',
+        'color': '#7870F9',
+        'image': 'flutter.png'
     }
 ]
 

@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import {IMAGE_URL} from "../Data/Constants"
 
 const Explore = (props) => {
   const { explorations } = props;
@@ -46,14 +47,15 @@ const Explore = (props) => {
 
   const displayExploreItems = explorations.map((explore) => (
     <div className="e-box" key={explore.id}>
-      <div className="e-content">
-        <div><h1 id={`${explore.id}`}>{explore.count}</h1><span className="plus">+</span></div>
-        <p>{explore.description}</p>
-      </div>
+        <div className="e-content">
+          <div><h1 id={`${explore.id}`}>{explore.count}</h1><span className="plus">+</span></div>
+          <p>{explore.description}</p>
+        </div>
+        <div className="e-image">
+          <img src={`${IMAGE_URL}/${explore.image}`} alt={explore.id} />
+        </div>
     </div>
   ));
-
-
 
   return (
     <div>
