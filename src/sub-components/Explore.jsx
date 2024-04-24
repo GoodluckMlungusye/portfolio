@@ -1,54 +1,12 @@
-import { useState, useRef, useEffect } from "react";
 import {IMAGE_URL} from "../Data/Constants"
 
 const Explore = (props) => {
   const { explorations } = props;
-  const [isElementReached, setIsElementReached] = useState(false);
-  const elementRef = useRef(null);
-
-
-  const startCounters = () => {
-    explorations.forEach((explore) => {
-      let count = 0;
-      const intervalId = setInterval(() => {
-        if (count < explore.counts) {
-          count++;
-          document.getElementById(`${explore.id}`).innerText = count;
-        } else {
-          clearInterval(intervalId);
-        }
-      }, 10);
-    });
-  };
-
-
-  const handleScroll = () => {
-    const element = elementRef.current;
-    const { top, bottom } = element.getBoundingClientRect();
-    const isElementVisible = top >= 0 && bottom <= window.innerHeight;
-
-    if (isElementVisible && !isElementReached) {
-      startCounters();
-      setIsElementReached(true);
-    } else if (!isElementVisible && isElementReached) {
-      setIsElementReached(false);
-    }
-  };
-
-
-  useEffect(() => {
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
-
 
   const displayExploreItems = explorations.map((explore) => (
     <div className="e-box" key={explore.id}>
         <div className="e-content">
-          <div><h1 id={`${explore.id}`}>{explore.count}</h1><span className="plus">+</span></div>
+          <div><h1>{explore.counts}</h1><span className="plus">+</span></div>
           <p>{explore.description}</p>
         </div>
         <div className="e-image">
@@ -77,7 +35,7 @@ const Explore = (props) => {
         <p>Explore More</p>
       </div>
 
-      <div className="explore" ref={elementRef}>
+      <div className="explore">
         {displayExploreItems}
       </div>
     </div>
