@@ -86,39 +86,127 @@
 
 
 /* ABOUT */
-.box-container {
-    @apply flex justify-center items-center
+.checkpoint h2{
+    margin-bottom: 0.5em;
+    color: #000;
+    font-weight: bold;
 }
-.inbox-container {
-    @apply flex-wrap justify-center ml-8 flex-col min-[992px]:flex-row flex
+
+.checkpoint h2>span{
+    color: #726f6f;
 }
-.box-container .inbox-container .box {
-    @apply rounded-xl m-6 min-[992px]:w-[30%] h-[25%] md:h-[30%] text-center p-1 bg-[#DFD8D81F] shadow-2xl w-[90%] min-[992px]:ml-0 min-[561px]:ml-[3%] ml-0
+
+.checkpoint h2:nth-child(2){
+    margin-bottom: 0.5em;
+    color: #000;
+    font-weight: 300;
 }
-.box-container .inbox-container .box .image {
-    @apply sm:h-72 w-[100%] rounded-lg overflow-hidden h-64
+
+.timeline{
+    margin: 5em auto;
+    max-width: 34.15em;
 }
-.box-container .inbox-container .box .image img {
-    @apply h-[100%] w-[100%] object-cover transition duration-200 ease-linear
+
+.checkpoint{
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
 }
-.box-container .inbox-container .box:hover .image img {
-    @apply scale-125
+
+
+.checkpoint div{
+    border: 2px solid green;
+    padding: 1.5em;
+    border-radius: 8px;
+    background: #ebe5e559;
 }
-.box-container .inbox-container .box .content .duration {
-    @apply relative top-[-16px] sm:p-1 inline-block bg-[#B1A7A7D8] sm:rounded-md p-0.5 rounded
+
+.checkpoint p{
+    line-height: 27px;
+    color: #000;
 }
-.box-container .inbox-container .box .content .duration span {
-    @apply sm:text-xl my-0 mx-4 text-black text-lg
+
+.checkpoint:nth-child(odd){
+    border-left: 3px solid green;
+    padding-left: 3em;
+    transform: translateX(16.8em);
 }
-.box-container .inbox-container .box .content .duration a:hover {
-    @apply text-green-700
+
+.checkpoint:nth-child(even){
+    border-right: 3px solid green;
+    padding-right: 3em;
+    transform: translateX(-17em);
 }
-.box-container .inbox-container .box .content h3 {
-    @apply text-black text-sm sm:text-base
+
+.checkpoint:nth-child(odd)::before, .checkpoint:nth-child(even)::before{
+    content: '';
+    background: green;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
 }
-.box-container .inbox-container .box .content p {
-    @apply text-black p-4 text-left text-sm sm:text-base duration-500 ease-in
+
+.checkpoint:nth-child(odd)::before{
+    left: 0;
+    transform: translateY(5px);
 }
+
+.checkpoint:nth-child(even)::before{
+    right: 0;
+    transform: translateY(5px);
+}
+
+.checkpoint:nth-child(odd) div::before, .checkpoint:nth-child(even) div::before{
+    content: '';
+    background: linear-gradient(to bottom left,green, yellow);
+    box-shadow: 0 0 0.5em #424242;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.checkpoint:nth-child(odd) div::before{
+    left: -0.1em;
+}
+
+.checkpoint:nth-child(even) div::before{
+    right: -0.9em;
+}
+
+@media screen and (max-width: 1150px) {
+    .timeline{
+        width: 80vw;
+    }
+    .timeline .checkpoint{
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+    .timeline .checkpoint::before{
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    .timeline .checkpoint div::before{
+        top: -0.5em;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}
+
+
+
+
 
 .explore {
     @apply flex flex-col md:grid md:grid-cols-2 min-[1530px]:grid-cols-4 gap-6 justify-center items-center bg-[#d4cbcb59] w-full h-full md:px-12 px-4 py-6
