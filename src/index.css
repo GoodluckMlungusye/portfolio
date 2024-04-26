@@ -101,7 +101,7 @@
 }
 
 .timeline{
-    @apply my-2 mx-auto max-w-[546.4px]
+    @apply min-[1151px]:mt-2 mt-14 mx-auto max-w-[546.4px]
 }
 
 .checkpoint{

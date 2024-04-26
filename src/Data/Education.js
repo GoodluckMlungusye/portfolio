@@ -3,7 +3,7 @@ const educations = [
         'id': 1,
         'description': 'Acquired expertise in programming, networks, databases, security, analysis, graphics, and software engineering.',
         'duration': '2020 - 2023',
-        'institute': 'University of Dar es Salaam',
+        'institute': 'University of DSM',
         'programme': 'Computer Science'
     },
     
