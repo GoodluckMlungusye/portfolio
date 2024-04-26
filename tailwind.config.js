@@ -29,13 +29,13 @@ module.exports = {
       },
 
       keyframes: {
-       text : {
-          '100%' : {opacity: '1'}
-        }
+        text : {
+            '100%' : {opacity: '1'}
+          }
       },
 
       animation: {
-        text : 'text 0.5s 1s linear forwards',
+        text : 'text 0.5s 1s linear forwards'
       }
 
     },

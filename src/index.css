@@ -86,57 +86,42 @@
 
 
 /* ABOUT */
+
+    /* education */
 .checkpoint h2{
-    margin-bottom: 0.5em;
-    color: #000;
-    font-weight: bold;
+    @apply mb-2 text-black font-bold
 }
 
 .checkpoint h2>span{
-    color: #726f6f;
+    @apply text-[#726f6f]
 }
 
 .checkpoint h2:nth-child(2){
-    margin-bottom: 0.5em;
-    color: #000;
-    font-weight: 300;
+    @apply mb-2 text-black font-light
 }
 
 .timeline{
-    margin: 5em auto;
-    max-width: 34.15em;
+    @apply my-2 mx-auto max-w-[546.4px]
 }
 
 .checkpoint{
-    max-width: 34em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    position: relative;
+    @apply py-8 max-w-[544px] relative
 }
 
-
 .checkpoint div{
-    border: 2px solid green;
-    padding: 1.5em;
-    border-radius: 8px;
-    background: #ebe5e559;
+    @apply border-2 border-solid border-green-700 p-6 rounded-lg bg-[#ebe5e559]
 }
 
 .checkpoint p{
-    line-height: 27px;
-    color: #000;
+     @apply leading-[1.6875rem] text-black
 }
 
 .checkpoint:nth-child(odd){
-    border-left: 3px solid green;
-    padding-left: 3em;
-    transform: translateX(16.8em);
+    @apply border-l-[3px] border-solid border-green-700 pl-12 translate-x-[16.8rem]
 }
 
 .checkpoint:nth-child(even){
-    border-right: 3px solid green;
-    padding-right: 3em;
-    transform: translateX(-17em);
+    @apply border-r-[3px] border-solid border-green-700 pr-12 translate-x-[-17rem]
 }
 
 .checkpoint:nth-child(odd)::before, .checkpoint:nth-child(even)::before{
@@ -150,13 +135,11 @@
 }
 
 .checkpoint:nth-child(odd)::before{
-    left: 0;
-    transform: translateY(5px);
+    @apply left-0 translate-y-[0.3125rem]
 }
 
 .checkpoint:nth-child(even)::before{
-    right: 0;
-    transform: translateY(5px);
+    @apply right-0 translate-y-[0.3125rem]
 }
 
 .checkpoint:nth-child(odd) div::before, .checkpoint:nth-child(even) div::before{
@@ -172,11 +155,11 @@
 }
 
 .checkpoint:nth-child(odd) div::before{
-    left: -0.1em;
+    @apply left-[-1.6px]
 }
 
 .checkpoint:nth-child(even) div::before{
-    right: -0.9em;
+    @apply right-[-14.4px]
 }
 
 @media screen and (max-width: 1150px) {
@@ -205,9 +188,7 @@
 }
 
 
-
-
-
+    /* explore */
 .explore {
     @apply flex flex-col md:grid md:grid-cols-2 min-[1530px]:grid-cols-4 gap-6 justify-center items-center bg-[#d4cbcb59] w-full h-full md:px-12 px-4 py-6
 }
