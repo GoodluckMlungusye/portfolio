@@ -10,7 +10,7 @@
     @apply font-poppins m-0 p-0 box-border scroll-smooth transition-all duration-500
 }
 .btn {
-    @apply hover:tracking-wider sm:hover:tracking-widest md:hover:tracking-btn duration-500 border-none rounded-lg text-xs sm:text-sm md:text-base text-white bg-green-700 inline-block py-2.5 px-7 my-5 mx-2.5 uppercase no-underline md:tracking-widest sm:tracking-wider tracking-wide ease-in
+    @apply hover:tracking-wider sm:hover:tracking-widest md:hover:tracking-btn duration-500 border-none rounded-lg text-xs sm:text-sm md:text-base text-white bg-green-700 hover:bg-gradient-to-br hover:from-green-700 hover:to-yellow-300 inline-block py-2.5 px-7 my-5 mx-2.5 uppercase no-underline md:tracking-widest sm:tracking-wider tracking-wide ease-in
 }
 .icon {
     @apply md:size-6 size-5 text-green-700
@@ -357,7 +357,7 @@
     @apply  bg-[#d4cbcb59] w-full flex justify-center items-center pb-10 
 }
 .projects .morebtn{
-    @apply hover:tracking-wider sm:hover:tracking-widest md:hover:tracking-btn duration-500 border-none rounded-md  text-white bg-green-700 inline-block py-2.5 px-7 my-5 mx-2.5 uppercase no-underline md:tracking-widest sm:tracking-wider tracking-wide ease-in mt-[-20px]
+    @apply hover:tracking-wider sm:hover:tracking-widest md:hover:tracking-btn duration-500 border-none rounded-md  text-white bg-green-700 hover:bg-gradient-to-br hover:from-green-700 hover:to-yellow-300 inline-block py-2.5 px-7 my-5 mx-2.5 uppercase no-underline md:tracking-widest sm:tracking-wider tracking-wide ease-in mt-[-20px]
 }
 .project-container {
     @apply bg-[#d4cbcb59] w-full items-center justify-center py-20 min-[636px]:px-12 px-4 flex flex-col min-[636px]:grid min-[636px]:grid-cols-2 min-[914px]:grid-cols-3 min-[1191px]:grid-cols-4 min-[1469px]:grid-cols-5 gap-8 md:even:mr-14 even:mr-0  md:even:ml-5 even:ml-0 
@@ -449,7 +449,7 @@
 
 /* TO TOP BUTTON */
 .to-top{
-    @apply flex justify-center items-center fixed bottom-4 right-8 opacity-0 pointer-events-none size-9 rounded-md bg-green-700 transition-all delay-500
+    @apply flex justify-center items-center fixed bottom-4 right-8 opacity-0 pointer-events-none size-9 rounded-md bg-green-700 hover:bg-gradient-to-br hover:from-green-700 hover:to-yellow-300 transition-all delay-500
 }
 .top-visible{
     @apply bottom-8 opacity-100 pointer-events-auto

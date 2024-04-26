@@ -70,7 +70,7 @@ const Projects = () => {
         {displayProjects}
       </div>
       <div className="viewmore">
-        <a  href={`${GITHUB_URL}`} target="_blank" rel="noopener noreferrer">
+        <a  href='https://github.com/GoodluckMlungusye?tab=repositories' target="_blank" rel="noopener noreferrer">
           <button className="morebtn">
             more projects
           </button>
