@@ -1,4 +1,4 @@
-import {IMAGE_URL} from "../Data/Constants"
+import {IMAGE_URL} from "../data/Constants"
 
 const Explore = (props) => {
   const { explorations } = props;

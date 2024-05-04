@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { Link } from "react-scroll";
 import { Fade } from "react-awesome-reveal";
+import { IMAGE_URL } from "../data/Constants";
 
 const Home = () => {
 
-    const bannerBackground = "assets/banner.jpg";
+    const bannerBackground =`${IMAGE_URL}/banner.jpg`
     const myProfession = "Software Developer";
     let wordCounter = 0;
 

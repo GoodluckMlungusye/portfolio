@@ -1,6 +1,7 @@
 import { useState} from "react";
 import { Link } from "react-scroll";
-import links from "../Data/NavigationLinks"
+import { IMAGE_URL } from "../data/Constants";
+import links from "../data/NavigationLinks"
 
 const NavBar = () => {
 
@@ -50,7 +51,7 @@ const NavBar = () => {
             >
               <img
                 className="lg:w-16 w-12"
-                src="assets/banner-icon.png"
+                src={`${IMAGE_URL}/banner-icon.png`}
                 alt="logo"
               />
             </Link>

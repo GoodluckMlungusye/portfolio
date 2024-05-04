@@ -1,4 +1,4 @@
-import educations from "../Data/Education";
+import educations from "../data/Education";
 
 const Education = () => {
   const displayEducationCard = educations.map((education) => (

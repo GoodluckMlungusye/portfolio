@@ -1,4 +1,4 @@
-import explorations from "../Data/ExploreInformation"
+import explorations from "../data/ExploreInformation"
 import Education from "../sub-components/Education";
 import Explore from "../sub-components/Explore";
 

@@ -1,7 +1,14 @@
 import React from "react";
-import { IMAGE_URL } from "../Data/Constants";
+import { IMAGE_URL } from "../data/Constants";
+import { downloadFile } from "../actions/downloadFile";
 
 const Contacts = () => {
+
+  const downloadCv = () => {
+      const file = 'mlungusye_goodluck.pdf';
+      downloadFile(file);
+  }
+
   return (
     <div id="contact" className="contact">
       <div className="title">
@@ -85,7 +92,7 @@ const Contacts = () => {
         </div>
 
         <div>
-          <button className="cv">
+          <button className="cv" onClick={downloadCv}>
             <span>Download CV</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
