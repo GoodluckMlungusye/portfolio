@@ -1,8 +1,8 @@
 const projects = [
 
     {
-        'id': 5,
-        'name': 'AfyaPro',
+        'id': 1,
+        'name': 'AfyaPro web',
         'technology': 'PHP',
         'rate': 3,
         'link': 'afyapro',
@@ -19,13 +19,13 @@ const projects = [
         'image': 'laravel.jpg'
     },
     {
-        'id': 10,
-        'name': 'Java Foundations',
-        'technology': 'Java',
+        'id': 3,
+        'name': 'HONA web',
+        'technology': 'HTML',
         'rate': 4,
-        'link': 'java-foundation',
-        'color': '#12192C',
-        'image': 'java.png'
+        'link': 'hona',
+        'color': '#CE76B3',
+        'image': 'native.jpg'
     },
     {
         'id': 4,
@@ -37,7 +37,7 @@ const projects = [
         'image': 'spring.jpg'
     },
     {
-        'id': 3,
+        'id': 5,
         'name': 'Portfolio',
         'technology': 'React',
         'rate': 5,
@@ -55,7 +55,7 @@ const projects = [
         'image': 'react.jpg'
     },
     {
-        'id': 1,
+        'id': 7,
         'name': 'UDVote',
         'technology': 'Flutter',
         'rate': 4,
@@ -64,7 +64,7 @@ const projects = [
         'image': 'flutter.png'
     },
     {
-        'id': 9,
+        'id': 8,
         'name': 'Go-Do App',
         'technology': 'Flutter',
         'rate': 4,
@@ -73,16 +73,16 @@ const projects = [
         'image': 'flutter.png'
     },
     {
-        'id': 8,
-        'name': 'E-commerce App',
+        'id': 9,
+        'name': 'MVVM architecture',
         'technology': 'Flutter',
         'rate': 3,
-        'link': 'e-commerce-app',
+        'link': 'flutter-MVVM-architecture',
         'color': '#7870F9',
         'image': 'flutter.png'
     },
     {
-        'id': 7,
+        'id': 10,
         'name': 'Quiz App',
         'technology': 'Flutter',
         'rate': 3,

@@ -287,10 +287,10 @@
   @apply py-8 px-0 relative
 }
 .swiper-slide {
-  @apply !w-[25rem] !h-[30rem] min-[500px]:!w-[30rem] min-[500px]:!h-[35rem] !relative
+  @apply !w-[25rem] !h-[30rem] min-[500px]:!w-[23rem] min-[500px]:!h-[28rem]  min-[1550px]:!w-[30rem] min-[1550px]:!h-[35rem]  !relative
 }
 .swiper-slide img{
-  @apply !w-[25rem] !h-[30rem] min-[500px]:!w-[30rem] min-[500px]:!h-[35rem] rounded-lg object-cover
+  @apply !w-[25rem] !h-[30rem] min-[500px]:!w-[23rem] min-[500px]:!h-[28rem] min-[1550px]:!w-[30rem] min-[1550px]:!h-[35rem] rounded min-[1550px]:rounded-lg object-cover
 }
 .swiper-slide-active .service-img:before{
   content: '';
@@ -323,13 +323,13 @@
   @apply text-white duration-500 uppercase mb-1 text-[15px] translate-y-96
 }
 .swiper-slide-active .service-box .service-content h2{
-  @apply  translate-y-24 min-[430px]:translate-y-28 min-[500px]:translate-y-40 delay-[600ms] min-[430px]:text-base text-xs
+  @apply  translate-y-24 min-[430px]:translate-y-28 min-[500px]:translate-y-28 min-[1550px]:translate-y-40 delay-[600ms] min-[430px]:text-base text-xs
 }
 .service-box .service-content p{
   @apply text-white duration-500 text-sm translate-y-96 
 }
 .swiper-slide-active .service-box .service-content p{
-  @apply translate-y-24 min-[430px]:translate-y-28 min-[500px]:translate-y-40 delay-[700ms] min-[430px]:text-sm text-xs
+  @apply translate-y-24 min-[430px]:translate-y-28 min-[500px]:translate-y-28 min-[1550px]:translate-y-40 delay-[700ms] min-[430px]:text-sm text-xs
 } 
 .scroll-right{
   @apply  pt-4 flex items-center justify-center
