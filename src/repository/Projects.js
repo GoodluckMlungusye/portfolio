@@ -7,6 +7,7 @@ const projects = [
         'rate': 3,
         'link': 'afyapro',
         'color': '#6082BB',
+        'isHosted': true,
         'image': 'php.png'
     },
     {
@@ -16,6 +17,7 @@ const projects = [
         'rate': 5,
         'link': 'UDVote-backend',
         'color': '#EF291E',
+        'isHosted': false,
         'image': 'laravel.jpg'
     },
     {
@@ -25,6 +27,7 @@ const projects = [
         'rate': 4,
         'link': 'hona',
         'color': '#CE76B3',
+        'isHosted': false,
         'image': 'native.jpg'
     },
     {
@@ -34,6 +37,7 @@ const projects = [
         'rate': 3,
         'link': 'portfolio-backend',
         'color': '#6EB442',
+        'isHosted': false,
         'image': 'spring.jpg'
     },
     {
@@ -43,6 +47,7 @@ const projects = [
         'rate': 5,
         'link': 'portfolio',
         'color': '#00D8FF',
+        'isHosted': false,
         'image': 'react.jpg'
     },
     {
@@ -52,6 +57,7 @@ const projects = [
         'rate': 5,
         'link': 'react-router',
         'color': '#00D8FF',
+        'isHosted': false,
         'image': 'react.jpg'
     },
     {
@@ -61,6 +67,7 @@ const projects = [
         'rate': 4,
         'link': 'UDVote-app',
         'color': '#7870F9',
+        'isHosted': false,
         'image': 'flutter.png'
     },
     {
@@ -70,6 +77,7 @@ const projects = [
         'rate': 4,
         'link': 'Go-Do-app',
         'color': '#7870F9',
+        'isHosted': false,
         'image': 'flutter.png'
     },
     {
@@ -79,6 +87,7 @@ const projects = [
         'rate': 3,
         'link': 'flutter-MVVM-architecture',
         'color': '#7870F9',
+        'isHosted': false,
         'image': 'flutter.png'
     },
     {
@@ -88,6 +97,7 @@ const projects = [
         'rate': 3,
         'link': 'quiz-app',
         'color': '#7870F9',
+        'isHosted': false,
         'image': 'flutter.png'
     }
 ]

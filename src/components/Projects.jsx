@@ -1,6 +1,6 @@
 import React from "react";
 import projects from "../repository/Projects";
-import {GITHUB_URL, IMAGE_URL} from "../repository/Constants"
+import {PROJECT_URL, GITHUB_URL, IMAGE_URL} from "../repository/Constants"
 
 const Projects = () => {
 
@@ -35,7 +35,7 @@ const Projects = () => {
         <div className="button">
           <button
             style={{ background: `${project.color}` }}>
-            <a href={`${GITHUB_URL}/${project.link}`} target="_blank" rel="noreferrer" className="flex items-center">
+            <a href={`${project.isHosted? `${PROJECT_URL}${project.link}` : `${GITHUB_URL}${project.link}`}`} target="_blank" rel="noreferrer" className="flex items-center">
               <span>View Project</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
