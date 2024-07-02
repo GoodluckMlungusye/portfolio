@@ -1,12 +1,10 @@
 import React from "react";
 import { IMAGE_URL } from "../repository/Constants";
-import { downloadFile } from "../actions/downloadFile";
 
 const Contacts = () => {
 
   const downloadCv = () => {
-      const file = 'mlungusye_goodluck.pdf';
-      downloadFile(file);
+      alert('File Not Available, This file is not yet uploaded. Please request it via the contacts in the Contact section.')
   }
 
   return (
