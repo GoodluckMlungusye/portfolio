@@ -1,9 +1,9 @@
-import services from "../data/Services";
+import services from "../repository/Services";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import {IMAGE_URL} from "../data/Constants"
+import {IMAGE_URL} from "../repository/Constants"
 
 const Services = () => {
   const displaySwiperSlides = services.map((service) => (

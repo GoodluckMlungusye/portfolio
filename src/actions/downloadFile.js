@@ -1,4 +1,4 @@
-import { BASE_URL, DOC_URL } from "../data/Constants";
+import { BASE_URL, DOC_URL } from "../repository/Constants";
 
 export const downloadFile = (file) => {
 

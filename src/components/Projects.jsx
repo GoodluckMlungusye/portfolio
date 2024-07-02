@@ -1,6 +1,6 @@
 import React from "react";
-import projects from "../data/Projects";
-import {GITHUB_URL, IMAGE_URL} from "../data/Constants"
+import projects from "../repository/Projects";
+import {GITHUB_URL, IMAGE_URL} from "../repository/Constants"
 
 const Projects = () => {
 

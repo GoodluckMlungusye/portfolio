@@ -1,5 +1,5 @@
 import React from "react";
-import { IMAGE_URL } from "../data/Constants";
+import { IMAGE_URL } from "../repository/Constants";
 import { downloadFile } from "../actions/downloadFile";
 
 const Contacts = () => {

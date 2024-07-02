@@ -1,7 +1,7 @@
 import { useState} from "react";
 import { Link } from "react-scroll";
-import { IMAGE_URL } from "../data/Constants";
-import links from "../data/NavigationLinks"
+import { IMAGE_URL } from "../repository/Constants";
+import links from "../repository/NavigationLinks"
 
 const NavBar = () => {
 
