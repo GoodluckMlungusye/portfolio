@@ -12,6 +12,16 @@ const projects = [
     },
     {
         'id': 2,
+        'name': 'HONA web',
+        'technology': 'JavaScript',
+        'rate': 4,
+        'link': 'hona',
+        'color': '#CE76B3',
+        'isHosted': true,
+        'image': 'native.jpg'
+    },
+    {
+        'id': 3,
         'name': 'UDVote backend ',
         'technology': 'Laravel',
         'rate': 5,
@@ -19,16 +29,6 @@ const projects = [
         'color': '#EF291E',
         'isHosted': false,
         'image': 'laravel.jpg'
-    },
-    {
-        'id': 3,
-        'name': 'HONA web',
-        'technology': 'HTML',
-        'rate': 4,
-        'link': 'hona',
-        'color': '#CE76B3',
-        'isHosted': false,
-        'image': 'native.jpg'
     },
     {
         'id': 4,
