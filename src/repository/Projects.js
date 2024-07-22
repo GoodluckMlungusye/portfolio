@@ -47,7 +47,7 @@ const projects = [
         'rate': 5,
         'link': 'portfolio',
         'color': '#00D8FF',
-        'isHosted': false,
+        'isHosted': true,
         'image': 'react.jpg'
     },
     {
